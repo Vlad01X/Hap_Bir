@@ -1,0 +1,52 @@
+@font-face {
+  font-family: 'inter';
+  src: url('./fonts/Inter/Inter-Regular.woff');
+  src: url('./fonts/Inter/Inter-Regular.woff2');
+  font-style: normal;
+  font-weight: normal;
+}
+
+.page {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 100px;
+  margin: 0;
+  height: 100vh;
+  background-size: cover;
+  background-image: url(./images/background.jpg);
+  font-family: 'inter', Arial, sans-serif;
+}
+
+
+.btn {
+  width: 300px;
+  height: 100px;
+  text-align: center;
+  display: block;
+  margin: 0 auto;
+  border-radius: 10px;
+  cursor: pointer;
+  background-color: rgb(71, 71, 71);
+  color: aqua;
+  font-weight: normal;
+  font-style: normal;
+  font-size: 50px;
+}
+
+.btn:focus + .text {
+  visibility: visible;
+}
+
+.text {
+  font-weight: normal;
+  font-style: normal;
+  visibility: hidden;
+  text-align: center;
+  max-width: 500px;
+  color: #fff;
+  background-color: rgb(71, 71, 71);
+  border-radius: 10px;
+  padding: 10px;
+}
